@@ -1,0 +1,22 @@
+{
+    "name": "orvisoft/module-feedcronscripts",
+    "description": "This module helps to create feeds for Google, Pixel, PriceSearcher and WebCollage.",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "farhan@orvisoft.com",
+            "name": "Farhan Islam"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "OrviSoft\\FeedCronScripts\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

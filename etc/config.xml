@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<feeds>
+			<googlefeed>
+				<enabled>0</enabled>
+				<file_name>Google-Export.csv</file_name>
+			</googlefeed>
+			<pixelfeed>
+				<enabled>0</enabled>
+				<file_name>Hatch-product-feeds.csv</file_name>
+			</pixelfeed>
+			<pricesearcher>
+				<enabled>0</enabled>
+				<file_name>pricesearcher-product-food.csv</file_name>
+			</pricesearcher>
+			<webcollage>
+				<enabled>0</enabled>
+				<file_name>Nick_WebCollage_Comp_peri_info.csv</file_name>
+			</webcollage>
+		</feeds>
+	</default>
+</config>

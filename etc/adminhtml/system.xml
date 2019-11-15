@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<section id="feeds" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label">
+			<label>Feeds Configuration</label>
+			<tab>catalog</tab>
+			<resource>OrviSoft_FeedCronScripts::config_orvisoft_feedcronscripts</resource>
+			<group id="googlefeed" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label">
+				<label>Google Feed Configuration</label>
+				<field id="enabled" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="select">
+					<label>Status</label>
+					<comment>Activate / Deactivate Google feed generation</comment>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="file_name" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="20" translate="label" type="text">
+					<label>File Name</label>
+					<comment>Enter filename for generated feed.</comment>
+				</field>
+			</group>
+			<group id="pixelfeed" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="20" translate="label">
+				<label>Pixel Feed Configuration</label>
+				<field id="enabled" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="select">
+					<label>Status</label>
+					<comment>Activate / Deactivate Pixel feed generation</comment>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="file_name" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="20" translate="label" type="text">
+					<label>File Name</label>
+					<comment>Enter filename for generated feed.</comment>
+				</field>
+			</group>
+			<group id="pricesearcher" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="30" translate="label">
+				<label>Price Searcher Feed Configuration</label>
+				<field id="enabled" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="select">
+					<label>Status</label>
+					<comment>Activate/ deactivate Price Searcher Feed</comment>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="file_name" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="20" translate="label" type="text">
+					<label>File Name</label>
+					<comment>Enter filename for generated feed.</comment>
+				</field>
+			</group>
+			<group id="webcollage" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="40" translate="label">
+				<label>WebCollage Feed Configuration</label>
+				<field id="enabled" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="select">
+					<label>Status</label>
+					<comment>Activate / Deactivate WebCollage feed generation</comment>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="file_name" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="20" translate="label" type="text">
+					<label>File Name</label>
+					<comment>Enter filename for generated feed.</comment>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
